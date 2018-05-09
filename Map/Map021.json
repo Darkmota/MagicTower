@@ -1,0 +1,51 @@
+{
+  "land": {
+    "name": "魔塔21层",
+    "id": 21,
+    "tilesetId": 0,
+    "map": [
+			[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+			[3, 3, 0, 0, 3, 0, 3, 0, 0, 3, 3],
+			[3, 0, 0, 3, 3, 0, 3, 3, 0, 0, 3],
+			[3, 0, 0, 0, 3, 0, 3, 0, 0, 0, 3],
+			[3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3],
+			[3, 3, 0, 0, 0, 0, 0, 0, 0, 3, 3],
+			[3, 3, 3, 0, 0, 3, 0, 0, 3, 3, 3],
+			[3, 3, 3, 3, 0, 0, 0, 3, 3, 3, 3],
+			[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+			[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+			[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+		]
+  },
+  
+  "events": [
+    {
+    	"id": 0,"name":"firstThing","xyffr": [-1,-1,0,0,9],"evpau":[true,false,true,true,false],"imageSrc": 1,
+      "list":[["playBGM", 9]]
+    },
+    {
+    	"id": 16,"name":"freeDoor","xyffr": [4,7,3,0,9],"evpau":[true,true,false,false,true], "imageSrc": 21,
+      "publicEventName": "BUG"
+    },
+    {
+    	"id": 16,"name":"freeDoor","xyffr": [6,7,3,0,9],"evpau":[true,true,false,false,true], "imageSrc": 21,
+      "publicEventName": "BUG"
+    },
+    {
+    	"id": 30,"name":"battle030","xyffr": [5,1,0,3,9], "evpau":[true,true,false,true,false],"imageSrc": 3,
+      "list": [["battle",30],["Azreal"],["textBox","冥灵魔王","幸好只是场游戏…………不然………………………………………………………………………………………………………………………………\\n好吧你赢了。"],["suicide"]]
+    },
+    {
+    	"id": 25,"name":"battle025","xyffr": [5,2,0,2,9], "evpau":[true,true,false,true,false],"imageSrc": 19,
+      "list": [["battle",25],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 25,"name":"battle025","xyffr": [5,3,0,2,9], "evpau":[true,true,false,true,false],"imageSrc": 19,
+      "list": [["battle",25],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 2,"name":"downStairs","xyffr": [5,7,0,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "downStairs"
+    }
+  ]
+}

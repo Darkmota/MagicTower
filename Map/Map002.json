@@ -1,0 +1,199 @@
+{
+  "land": {
+    "name": "魔塔2层",
+    "id": 2,
+    "tilesetId": 0,
+    "map": [
+			[0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+			[0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1],
+			[0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1],
+			[0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1],
+			[0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1],
+			[0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1],
+			[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+			[0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1],
+			[0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1],
+			[0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1],
+			[0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1]
+		]
+  },
+  
+  "events": [
+    {
+    	"id": 0,"name":"firstThing","xyffr": [-1,-1,0,0,9],"evpau":[true,false,true,true,false],"imageSrc": 1,
+      "list":[["textBox","作者","像这样每次进入本层都会触发的事件是名称为firstThing的事件，可以利用该事件维持BGM的播放。"],["textBox","作者","在console内用warn显示的是玩家当前触发的事件，所有事件都由事件框架接收后顺序执行，其余的带有标号的log信息都是事件框架当前执行的步骤。"],["playBGM", 9],["suicide"]]
+    },
+    {
+    	"id": 1,"name":"upStairs","xyffr": [0,10,1,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "upStairs"
+    },
+    {
+    	"id": 2,"name":"trickDoor","xyffr": [1,6,3,0,9],"evpau":[true,true,false,false,false], "imageSrc": 9,
+      "list": [["systemMessageBox", "这扇坚固的门上面没有锁，无法打开。"]]
+    },
+    {
+    	"id": 33,"name":"battle009","xyffr": [9,2,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 14,
+      "list": [["battle",9],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 33,"name":"battle009","xyffr": [8,6,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 14,
+      "list": [["battle",9],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 33,"name":"battle010","xyffr": [3,0,0,2,9], "evpau":[true,true,false,true,false],"imageSrc": 14,
+      "list": [["battle",10],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 33,"name":"npc","xyffr": [7,10,0,0,9], "evpau":[true,true,false,true,false],"imageSrc": 1,
+      "list": [["textBox","孩子幸苦你了，但是我手上的剑早就给了之前那个勇士了，你去上面……"],["textBox","搜寻一下他的尸骨吧，运气好的话剑会在那里。"],["suicide"]]
+    },
+    {
+    	"id": 33,"name":"npc","xyffr": [9,10,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 1,
+      "list": [["textBox","孩子幸苦你了，但是我手上的盾早就卖给了之前那个勇士了，你去上面……"],["textBox","搜寻一下他的尸骨吧，运气好的话盾会在剑的附近。"],["suicide"]]
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [2,2,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [2,3,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [2,8,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [2,9,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [4,2,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [4,3,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [8,0,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [8,1,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [8,2,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [2,5,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [2,7,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [5,5,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [7,4,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [9,3,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [8,5,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 19,"name":"blueDoor","xyffr": [5,7,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "blueDoor"
+    },
+    {
+    	"id": 16,"name":"freeDoor","xyffr": [7,7,3,0,9],"evpau":[true,true,false,false,true], "imageSrc": 21,
+      "publicEventName": "freeDoor"
+    },
+    {
+    	"id": 16,"name":"freeDoor","xyffr": [9,7,3,0,9],"evpau":[true,true,false,false,true], "imageSrc": 21,
+      "publicEventName": "freeDoor"
+    },
+    {
+    	"id": 14,"name":"blueKey","xyffr": [9,1,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "blueKey"
+    },
+    {
+    	"id": 15,"name":"redKey","xyffr": [9,0,2,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "redKey"
+    },
+    {
+    	"id": 30,"name":"redGem","xyffr": [6,0,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redGem"
+    },
+    {
+    	"id": 30,"name":"redGem","xyffr": [6,1,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redGem"
+    },
+    {
+    	"id": 30,"name":"redGem","xyffr": [6,2,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redGem"
+    },
+    {
+    	"id": 30,"name":"redGem","xyffr": [2,10,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redGem"
+    },
+    {
+    	"id": 31,"name":"blueGem","xyffr": [7,0,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueGem"
+    },
+    {
+    	"id": 31,"name":"blueGem","xyffr": [7,1,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueGem"
+    },
+    {
+    	"id": 31,"name":"blueGem","xyffr": [7,2,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueGem"
+    },
+    {
+    	"id": 31,"name":"blueGem","xyffr": [2,1,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueGem"
+    },
+    {
+    	"id": 24,"name":"redHeal","xyffr": [5,8,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 24,"name":"redHeal","xyffr": [5,9,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 24,"name":"redHeal","xyffr": [5,10,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 29,"name":"blueHeal","xyffr": [4,1,1,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueHeal"
+    },
+    {
+    	"id": 29,"name":"blueHeal","xyffr": [4,8,1,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueHeal"
+    },
+    {
+    	"id": 29,"name":"blueHeal","xyffr": [4,9,1,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueHeal"
+    },
+    {
+    	"id": 29,"name":"blueHeal","xyffr": [4,10,1,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueHeal"
+    },
+    {
+    	"id": 45,"name":"downStairs","xyffr": [0,0,0,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "downStairs"
+    }
+  ]
+}

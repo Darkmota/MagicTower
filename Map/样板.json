@@ -1,0 +1,35 @@
+{
+  "land": {
+    "name": "魔塔1层",
+    "id": 1,
+    "tilesetId": 0,
+    "map": [
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+		]
+  },
+  
+  "events": [
+    {
+    	"id": 0,"name":"firstThing","xyffr": [-1,-1,0,0,9],"evpau":[true,false,true,true,false],"imageSrc": 1,
+      "list":[["textBox","欢迎来到Canvas魔塔工程。 （按回车键键继续）"],["textBox","这是一种需要按空格继续的文本框\\n(代码内容主要属于textBox.js)。"],["playBGM", 9]]
+    },
+    {
+    	"id": 1,"name":"upStairs","xyffr": [0,0,1,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "upStairs"
+    },
+    {
+    	"id": 2,"name":"downStairs","xyffr": [5,10,0,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "downStairs"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "land": {
+    "name": "魔塔15层",
+    "id": 15,
+    "tilesetId": 0,
+    "map": [
+			[0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0],
+			[0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0],
+			[0, 3, 3, 1, 1, 1, 1, 1, 3, 3, 0],
+			[0, 3, 1, 1, 0, 1, 0, 1, 1, 3, 0],
+			[0, 3, 1, 1, 0, 1, 0, 1, 1, 3, 0],
+			[0, 3, 1, 1, 0, 1, 0, 1, 1, 3, 0],
+			[0, 3, 3, 1, 0, 1, 0, 1, 3, 3, 0],
+			[0, 3, 3, 1, 0, 1, 0, 1, 3, 3, 0],
+			[0, 3, 3, 3, 0, 0, 0, 3, 3, 3, 0],
+			[0, 3, 3, 3, 3, 0, 3, 3, 3, 3, 0],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+		]
+  },
+  
+  "events": [
+    {
+    	"id": 0,"name":"firstThing","xyffr": [-1,-1,0,0,9],"evpau":[true,false,true,true,false],"imageSrc": 1,
+      "list":[["playBGM", 9]]
+    },
+    {
+    	"id": 31,"name":"blueGem","xyffr": [4,4,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueGem"
+    },
+    {
+    	"id": 31,"name":"blueGem","xyffr": [6,4,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueGem"
+    },
+    {
+    	"id": 30,"name":"redGem","xyffr": [4,5,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redGem"
+    },
+    {
+    	"id": 30,"name":"redGem","xyffr": [6,5,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redGem"
+    },
+    {
+    	"id": 21,"name":"redDoor","xyffr": [5,9,2,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "redDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [4,7,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [6,7,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 1,"name":"upStairs","xyffr": [6,0,1,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "upStairs"
+    },
+    {
+    	"id": 2,"name":"downStairs","xyffr": [4,0,0,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "downStairs"
+    }
+  ]
+}

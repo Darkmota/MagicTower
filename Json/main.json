@@ -1,0 +1,27 @@
+{
+	"main":{
+		"author":"Darkmota",
+		"title":"TEST",
+		"start":{
+			"x":5,
+			"y":10,
+			"z":0,
+			"hp":1000,
+			"atk":10,
+			"def":10,
+			"gold":0,
+			"exp":0,
+			"bag":[0, 0, 0, 0]
+		},
+		"heroImgSrc":"./Graphics/Characters/011-Braver01.png",
+		"battlerData":"./Json/battler.json",
+		"itemData":"./Json/item.json",
+		"publicEventData":"./Json/publicEvent.json",
+		"tilesetData":"./Json/tileset.json",
+		"eventImageData":"./Json/eventImage.json",
+		"battlerImageData":"./Json/battler.json",
+		"audioData":"./Json/audio.json",
+		"mapDataNum":22,
+		"mapData":["./Map/Map000.json","./Map/Map001.json","./Map/Map002.json","./Map/Map003.json","./Map/Map004.json","./Map/Map005.json","./Map/Map006.json","./Map/Map007.json","./Map/Map008.json","./Map/Map009.json","./Map/Map010.json","./Map/Map011.json","./Map/Map012.json","./Map/Map013.json","./Map/Map014.json","./Map/Map015.json","./Map/Map016.json","./Map/Map017.json","./Map/Map018.json","./Map/Map019.json","./Map/Map020.json","./Map/Map021.json"]
+	}
+}

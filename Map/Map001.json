@@ -1,0 +1,207 @@
+{
+  "land": {
+    "name": "魔塔1层",
+    "id": 1,
+    "tilesetId": 0,
+    "map": [
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+			[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+			[0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0],
+			[0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0],
+			[1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0],
+			[0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+			[0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0],
+			[1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0],
+			[0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1],
+			[0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0],
+			[0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0]
+		]
+  },
+  
+  "events": [
+    {
+    	"id": 0,"name":"firstThing","xyffr": [-1,-1,0,0,9],"evpau":[true,false,true,true,false],"imageSrc": 1,
+      "list":[["textBox","作者","按S键可以查看本层所有敌人的状态和预计伤害（红字）,若伤害为999999则为无限大"],["textBox","作者","第三层有利用事件框架制作的商店样例，包含了玩家自主选择项和"],["playBGM", 9],["suicide"]]
+    },
+    {
+    	"id": 1,"name":"upStairs","xyffr": [0,0,1,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "upStairs"
+    },
+    {
+    	"id": 2,"name":"yellowKey","xyffr": [7,2,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [7,3,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 4,"name":"yellowKey","xyffr": [0,3,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 5,"name":"yellowKey","xyffr": [0,5,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 6,"name":"yellowKey","xyffr": [2,9,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 7,"name":"yellowKey","xyffr": [2,10,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 8,"name":"yellowKey","xyffr": [8,9,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 9,"name":"yellowKey","xyffr": [8,10,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 10,"name":"yellowKey","xyffr": [9,10,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 11,"name":"yellowKey","xyffr": [10,10,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 12,"name":"yellowKey","xyffr": [2,0,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 13,"name":"blueKey","xyffr": [10,9,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "blueKey"
+    },
+    {
+    	"id": 14,"name":"blueKey","xyffr": [2,6,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "blueKey"
+    },
+    {
+    	"id": 15,"name":"redKey","xyffr": [4,9,2,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "redKey"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [3,2,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 17,"name":"yellowDoor","xyffr": [1,4,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 18,"name":"yellowDoor","xyffr": [1,7,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 19,"name":"yellowDoor","xyffr": [5,5,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 20,"name":"yellowDoor","xyffr": [9,8,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 21,"name":"redDoor","xyffr": [5,8,2,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "redDoor"
+    },
+    {
+    	"id": 22,"name":"redHeal","xyffr": [0,2,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 23,"name":"redHeal","xyffr": [6,2,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 24,"name":"redHeal","xyffr": [6,3,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 25,"name":"redHeal","xyffr": [8,2,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 26,"name":"redHeal","xyffr": [8,3,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 27,"name":"redHeal","xyffr": [0,9,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 28,"name":"redHeal","xyffr": [0,10,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 29,"name":"blueHeal","xyffr": [1,9,1,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueHeal"
+    },
+    {
+    	"id": 30,"name":"redGem","xyffr": [2,3,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redGem"
+    },
+    {
+    	"id": 31,"name":"blueGem","xyffr": [0,6,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueGem"
+    },
+    {
+    	"id": 32,"name":"monsterBook","xyffr": [1,10,2,2,9],"evpau":[true,true,false,false,true], "imageSrc": 7,
+      "publicEventName": "monsterBook"
+    },
+    {
+    	"id": 33,"name":"battle000","xyffr": [7,5,0,0,9], "evpau":[true,true,false,true,false],"imageSrc": 2,
+      "list": [["battle",0],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 34,"name":"battle000","xyffr": [3,0,0,0,9], "evpau":[true,true,false,true,false],"imageSrc": 2,
+      "list": [["battle",0],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 35,"name":"battle000","xyffr": [5,0,0,0,9], "evpau":[true,true,false,true,false],"imageSrc": 2,
+      "list": [["battle",0],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 36,"name":"battle001","xyffr": [4,0,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 2,
+      "list": [["battle",1],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 37,"name":"battle002","xyffr": [8,5,0,0,9], "evpau":[true,true,false,true,false],"imageSrc": 3,
+      "list": [["battle",2],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 38,"name":"battle003","xyffr": [1,3,0,0,9], "evpau":[true,true,false,true,false],"imageSrc": 4,
+      "list": [["battle",3],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 39,"name":"battle003","xyffr": [2,2,0,0,9], "evpau":[true,true,false,true,false],"imageSrc": 4,
+      "list": [["battle",3],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 40,"name":"battle004","xyffr": [8,4,0,2,9], "evpau":[true,true,false,true,false],"imageSrc": 2,
+      "list": [["battle",4],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 41,"name":"battle005","xyffr": [1,5,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 4,
+      "list": [["battle",5],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 42,"name":"battle005","xyffr": [1,8,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 4,
+      "list": [["battle",5],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 43,"name":"battle006","xyffr": [6,5,0,0,9], "evpau":[true,true,false,true,false],"imageSrc": 10,
+      "list": [["battle",6],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 44,"name":"battle008","xyffr": [9,9,0,0,9], "evpau":[true,true,false,true,false],"imageSrc": 5,
+      "list": [["battle",8],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 45,"name":"downStairs","xyffr": [5,10,0,31,9],"evpau":[true,true,true,false,false], "imageSrc": 0,
+      "list": [["teleport",0,5,0]]
+    }
+  ]
+}

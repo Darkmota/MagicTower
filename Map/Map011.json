@@ -1,0 +1,245 @@
+{
+  "land": {
+    "name": "魔塔11层",
+    "id": 11,
+    "tilesetId": 0,
+    "map": [
+			[0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0],
+			[0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0],
+			[0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0],
+			[0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1],
+			[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+			[0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0],
+			[0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+			[0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0],
+			[0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0],
+			[1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1],
+			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+		]
+  },
+  
+  "events": [
+    {
+    	"id": 0,"name":"firstThing","xyffr": [-1,-1,0,0,9],"evpau":[true,false,true,true,false],"imageSrc": 1,
+      "list":[["playBGM", 9]]
+    },
+    {
+    	"id": 32,"name":"npc","xyffr": [5,8,0,2,9], "evpau":[true,true,false,true,false],"imageSrc": 16,
+      "list": [
+      ["textBox", "贪婪之神", "我还是贪婪之神，如果你愿意给我100个金币，我就可以提升你的战斗力。"],["selectionBox", 4, "4000点生命", "20点攻击力", "20点防御力", "退出", 2, 6, 10, 14],
+      ["if", "g", ">=", "100", 1],
+			["assign", "h", "+=", "4000"],
+			["assign", "g", "-=", "100"],
+			["jump", 1],
+			["if", "g", ">=", "100", 1],
+			["assign", "a", "+=", "20"],
+			["assign", "g", "-=", "100"],
+			["jump", 1],
+			["if", "g", ">=", "100", 1],
+			["assign", "d", "+=", "20"],
+			["assign", "g", "-=", "100"],
+			["jump", 1],
+			["escape"]]
+    },
+    {
+    	"id": 31,"name":"npcl","xyffr": [4,8,3,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "BUG"
+    },
+    {
+    	"id": 33,"name":"npcr","xyffr": [6,8,5,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "BUG"
+    },
+    {
+    	"id": 23,"name":"battle023","xyffr": [5,6,0,3,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",23],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 21,"name":"battle021","xyffr": [8,1,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",21],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 22,"name":"battle022","xyffr": [9,1,0,2,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",22],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 21,"name":"battle021","xyffr": [9,2,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",21],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 21,"name":"battle021","xyffr": [10,1,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",21],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 21,"name":"battle021","xyffr": [3,6,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",21],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 21,"name":"battle021","xyffr": [7,6,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",21],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 20,"name":"battle020","xyffr": [2,7,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 5,
+      "list": [["battle",20],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 20,"name":"battle020","xyffr": [2,8,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 5,
+      "list": [["battle",20],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 20,"name":"battle020","xyffr": [8,7,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 5,
+      "list": [["battle",20],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 20,"name":"battle020","xyffr": [8,8,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 5,
+      "list": [["battle",20],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 31,"name":"blueGem","xyffr": [0,6,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueGem"
+    },
+    {
+    	"id": 31,"name":"blueGem","xyffr": [0,7,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueGem"
+    },
+    {
+    	"id": 31,"name":"blueGem","xyffr": [0,8,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueGem"
+    },
+    {
+    	"id": 30,"name":"redGem","xyffr": [10,6,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redGem"
+    },
+    {
+    	"id": 30,"name":"redGem","xyffr": [10,7,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redGem"
+    },
+    {
+    	"id": 30,"name":"redGem","xyffr": [10,8,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redGem"
+    },
+    {
+    	"id": 29,"name":"blueHeal","xyffr": [8,0,1,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueHeal"
+    },
+    {
+    	"id": 29,"name":"blueHeal","xyffr": [10,0,1,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueHeal"
+    },
+    {
+    	"id": 29,"name":"blueHeal","xyffr": [4,6,1,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueHeal"
+    },
+    {
+    	"id": 29,"name":"blueHeal","xyffr": [6,6,1,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueHeal"
+    },
+    {
+    	"id": 22,"name":"redHeal","xyffr": [4,9,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 22,"name":"redHeal","xyffr": [6,9,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 22,"name":"redHeal","xyffr": [0,1,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 22,"name":"redHeal","xyffr": [0,2,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 22,"name":"redHeal","xyffr": [0,0,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 21,"name":"redDoor","xyffr": [2,9,2,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "redDoor"
+    },
+    {
+    	"id": 21,"name":"redDoor","xyffr": [8,9,2,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "redDoor"
+    },
+    {
+    	"id": 19,"name":"blueDoor","xyffr": [3,5,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "blueDoor"
+    },
+    {
+    	"id": 19,"name":"blueDoor","xyffr": [7,5,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "blueDoor"
+    },
+    {
+    	"id": 19,"name":"blueDoor","xyffr": [9,3,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "blueDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [0,3,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [2,3,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [4,3,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [6,3,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [0,5,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 16,"name":"yellowDoor","xyffr": [10,5,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "yellowDoor"
+    },
+    {
+    	"id": 15,"name":"redKey","xyffr": [6,0,2,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "redKey"
+    },
+    {
+    	"id": 15,"name":"redKey","xyffr": [6,1,2,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "redKey"
+    },
+    {
+    	"id": 15,"name":"redKey","xyffr": [6,2,2,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "redKey"
+    },
+    {
+    	"id": 13,"name":"blueKey","xyffr": [4,0,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "blueKey"
+    },
+    {
+    	"id": 13,"name":"blueKey","xyffr": [4,1,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "blueKey"
+    },
+    {
+    	"id": 13,"name":"blueKey","xyffr": [4,2,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "blueKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [2,0,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [2,1,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 3,"name":"yellowKey","xyffr": [2,2,0,0,9],"evpau":[true,true,false,false,true], "imageSrc": 6,
+      "publicEventName": "yellowKey"
+    },
+    {
+    	"id": 1,"name":"upStairs","xyffr": [10,10,1,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "upStairs"
+    },
+    {
+    	"id": 2,"name":"downStairs","xyffr": [0,10,0,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "downStairs"
+    }
+  ]
+}

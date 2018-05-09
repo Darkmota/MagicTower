@@ -1,0 +1,27 @@
+{
+	"imageNum":22,
+	"image":[
+		[0, "./Graphics/Tilesets/land.png"],
+		[1, "./Graphics/Characters/001-npc01.png"],
+		[2, "./Graphics/Characters/031-Monster01.png"],
+		[3, "./Graphics/Characters/032-Monster02.png"],
+		[4, "./Graphics/Characters/033-Monster03.png"],
+		[5, "./Graphics/Characters/034-Monster04.png"],
+		[6, "./Graphics/Characters/101-item01.png"],
+		[7, "./Graphics/Characters/102-item02.png"],
+		[8, "./Graphics/Characters/103-item03.png"],
+		[9, "./Graphics/Characters/202-other02.png"],
+		[10, "./Graphics/Characters/035-Monster05.png"],
+		[11, "./Graphics/Autotiles/Lava.png"],
+		[12, "./Graphics/Autotiles/Star.png"],
+		[13, "./Graphics/Characters/202-other02.png"],
+		[14, "./Graphics/Characters/037-Monster07.png"],
+		[15, "./Graphics/Characters/032-Monster02.png"],
+		[16, "./Graphics/Characters/002-npc02.png"],
+		[17, "./Graphics/Characters/205-other05.png"],
+		[18, "./Graphics/Characters/036-Monster06.png"],
+		[19, "./Graphics/Characters/038-Monster08.png"],
+		[20, "./Graphics/Characters/104-item04.png"],
+		[21, "./Graphics/Characters/203-other03.png"]
+	]
+}

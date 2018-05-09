@@ -1,0 +1,47 @@
+{
+	"tilesetNum":1,
+	"tileset":[
+		{
+			"id": 0,
+			"tilesetSrc": "./Graphics/Tilesets/land.png",
+			"tilesetMap": [
+				{
+					"id": 0,
+					"name": "ground",
+					"x": 3,
+					"y": 1,
+					"passable": true,
+					"animation": false
+				},
+				{
+					"id": 1,
+					"name": "wall",
+					"x": 6,
+					"y": 0,
+					"passable": false,
+					"animation": false
+				},
+				{
+					"id": 2,
+					"name": "lava",
+					"useEventImage": true,
+					"eventImageSrc": 11,
+					"x": 0,
+					"y": 0,
+					"passable": false,
+					"animation": true
+				},
+				{
+					"id": 3,
+					"name": "star",
+					"useEventImage": true,
+					"eventImageSrc": 12,
+					"x": 0,
+					"y": 0,
+					"passable": false,
+					"animation": true
+				}
+			]
+		}
+	]
+}

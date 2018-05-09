@@ -1,0 +1,115 @@
+{
+  "land": {
+    "name": "魔塔14层",
+    "id": 14,
+    "tilesetId": 0,
+    "map": [
+			[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+			[1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1],
+			[1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1],
+			[1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1],
+			[1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1],
+			[1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1],
+			[1, 0, 3, 3, 1, 0, 1, 3, 3, 0, 1],
+			[1, 0, 3, 3, 1, 0, 1, 3, 3, 0, 1],
+			[1, 0, 3, 3, 1, 0, 1, 3, 3, 0, 1],
+			[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+			[1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1]
+		]
+  },
+  
+  "events": [
+    {
+    	"id": 0,"name":"firstThing","xyffr": [-1,-1,0,0,9],"evpau":[true,false,true,true,false],"imageSrc": 1,
+      "list":[["playBGM", 9]]
+    },
+    {
+    	"id": 16,"name":"superup","xyffr": [5,3,3,3,9],"evpau":[true,true,false,false,false], "imageSrc": 8,
+      "list":[["eval", "mainHero.hp*=2;"],["playSE",18],["systemMessageBox", "获得圣水，HP提升一倍。"],["suicide"]]
+    },
+    {
+    	"id": 16,"name":"freeDoor","xyffr": [5,4,3,0,9],"evpau":[true,true,false,false,true], "imageSrc": 21,
+      "publicEventName": "freeDoor"
+    },
+    {
+    	"id": 7,"name":"allKey","xyffr": [3,0,2,1,9],"evpau":[true,true,false,false,false], "imageSrc": 6,
+      "list": [["getItem",0,1],["getItem",1,1],["getItem",2,1],["playSE",16],["systemMessageBox","获得钥匙串，三色钥匙各+1。"],["suicide"]]
+    },
+    {
+    	"id": 27,"name":"battle027","xyffr": [5,6,0,3,9], "evpau":[true,true,false,true,false],"imageSrc": 4,
+      "list": [["battle",27],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 26,"name":"battle026","xyffr": [2,0,0,3,9], "evpau":[true,true,false,true,false],"imageSrc": 14,
+      "list": [["battle",26],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 24,"name":"battle024","xyffr": [5,5,0,0,9], "evpau":[true,true,false,true,false],"imageSrc": 14,
+      "list": [["battle",24],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 24,"name":"battle024","xyffr": [5,7,0,0,9], "evpau":[true,true,false,true,false],"imageSrc": 14,
+      "list": [["battle",24],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 22,"name":"battle022","xyffr": [2,9,0,2,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",22],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 22,"name":"battle022","xyffr": [8,9,0,2,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",22],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 21,"name":"battle021","xyffr": [1,9,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",21],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 21,"name":"battle021","xyffr": [3,9,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",21],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 21,"name":"battle021","xyffr": [7,9,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",21],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 21,"name":"battle021","xyffr": [9,9,0,1,9], "evpau":[true,true,false,true,false],"imageSrc": 18,
+      "list": [["battle",21],["Azreal"],["suicide"]]
+    },
+    {
+    	"id": 22,"name":"redHeal","xyffr": [2,5,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 22,"name":"redHeal","xyffr": [8,5,0,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "redHeal"
+    },
+    {
+    	"id": 29,"name":"blueHeal","xyffr": [2,1,1,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueHeal"
+    },
+    {
+    	"id": 29,"name":"blueHeal","xyffr": [8,1,1,1,9],"evpau":[true,true,false,false,true], "imageSrc": 8,
+      "publicEventName": "blueHeal"
+    },
+    {
+    	"id": 19,"name":"blueDoor","xyffr": [5,8,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "blueDoor"
+    },
+    {
+    	"id": 19,"name":"blueDoor","xyffr": [4,9,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "blueDoor"
+    },
+    {
+    	"id": 19,"name":"blueDoor","xyffr": [6,9,1,0,9],"evpau":[true,true,false,false,true], "imageSrc": 9,
+      "publicEventName": "blueDoor"
+    },
+    {
+    	"id": 1,"name":"upStairs","xyffr": [4,0,1,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "upStairs"
+    },
+    {
+    	"id": 2,"name":"downStairs","xyffr": [5,10,0,31,9],"evpau":[true,true,true,false,true], "imageSrc": 0,
+      "publicEventName": "downStairs"
+    }
+  ]
+}
