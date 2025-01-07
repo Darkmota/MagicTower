@@ -1,0 +1,24 @@
+{
+	"audioNum":19,
+	"audio":[
+		[0, "钟声", "./Audio/SE/Bell.ogg"],
+		[1, "打击1", "./Audio/SE/Blow1.ogg"],
+		[2, "打击2", "./Audio/SE/Blow2.ogg"],
+		[3, "打击3", "./Audio/SE/Blow3.ogg"],
+		[4, "打击4", "./Audio/SE/Blow4.ogg"],
+		[5, "打击5", "./Audio/SE/Blow5.ogg"],
+		[6, "打击6", "./Audio/SE/Blow6.ogg"],
+		[7, "打击7", "./Audio/SE/Blow7.ogg"],
+		[8, "冥", "./Audio/BGM/beatmania - 冥.mp3"],
+		[9, "Another Medium", "./Audio/BGM/Toby Fox - Another Medium.mp3"],
+		[10, "关闭", "./Audio/SE/Close.ogg"],
+		[11, "光标", "./Audio/SE/Cursor.ogg"],
+		[12, "注意", "./Audio/SE/Decision.ogg"],
+		[13, "钥匙", "./Audio/SE/Key.ogg"],
+		[14, "敲墙", "./Audio/SE/Knock.ogg"],
+		[15, "传送", "./Audio/SE/Teleport.ogg"],
+		[16, "开门", "./Audio/SE/Door.ogg"],
+		[17, "恢复", "./Audio/SE/Heal.ogg"],
+		[18, "宝石", "./Audio/SE/Gem.ogg"]
+	]
+}

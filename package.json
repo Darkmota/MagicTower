@@ -1,0 +1,20 @@
+{
+  "name": "magic-tower",
+  "version": "1.0.0",
+  "description": "Magic Tower game converted to TypeScript",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npx serve"
+  },
+  "keywords": [
+    "game",
+    "typescript"
+  ],
+  "author": "Darkmota",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.32",
+    "typescript": "^5.7.2"
+  }
+}

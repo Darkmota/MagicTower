@@ -1,0 +1,24 @@
+{
+	"publicEvent":{
+		"talkalot":[
+			["textBox","这里的一段话是经过程序分割后适应文本框尺寸的，请尽量避免文本量超出单个文本框限制。嗝。"],
+			["systemMessageBox", "你的肉身不能穿过的门，让上帝代你穿过。"]
+		],
+		"yellowDoor":[["if","i0", ">", "0", 10],["getItem",0,-1],["playSE",16],["setFace","self",1],["wait",1],["setFace","self", 2],["wait",1],["setFace","self",3],["wait",1],["suicide"],["systemMessageBox","没有黄钥匙"]],
+		"blueDoor":[["if","i1", ">", "0", 10],["getItem",1,-1],["playSE",16],["setFace","self",1],["wait",1],["setFace","self", 2],["wait",1],["setFace","self",3],["wait",1],["suicide"],["systemMessageBox","没有蓝钥匙"]],
+		"redDoor":[["if","i2", ">", "0", 10],["getItem",2,-1],["playSE",16],["setFace","self",1],["wait",1],["setFace","self", 2],["wait",1],["setFace","self",3],["wait",1],["suicide"],["systemMessageBox","没有红钥匙"]],
+		"freeDoor":[["playSE",16],["setFace","self",1],["wait",1],["setFace","self", 2],["wait",1],["setFace","self",3],["wait",1],["suicide"]],
+		"yellowKey":[["getItem",0,1],["playSE",13],["suicide"]],
+		"blueKey":[["getItem",1,1],["playSE",13],["suicide"]],
+		"redKey":[["getItem",2,1],["playSE",13],["suicide"]],
+		"redHeal":[["assign","h","+=","200"],["playSE",17],["systemMessageBox","获得小血瓶，HP增加200。"],["suicide"]],
+		"blueHeal":[["assign","h","+=","500"],["playSE",17],["systemMessageBox","获得大血瓶，HP增加500。"],["suicide"]],
+		"redGem":[["assign","a","+=","3"],["playSE",18],["systemMessageBox","获得红宝石，ATK增加3。"],["suicide"]],
+		"blueGem":[["assign","d","+=","3"],["playSE",18],["systemMessageBox","获得蓝宝石，DEF增加3。"],["suicide"]],
+		"monsterBook":[["getItem",3,1],["suicide"]],
+		"upStairs":[["eval", "mainHero.z++; mainMapMover.set(50, mainHero.z, mainHero.x, mainHero.y); this.next();"]],
+		"downStairs":[["eval", "mainHero.z--; mainMapMover.set(50, mainHero.z, mainHero.x, mainHero.y); this.next();"]],
+		"BUG":[["escape"]],
+		"1up":[["assign", "h", "+=", "1000"],["assign", "a", "+=", "7"],["assign", "d", "+=", "7"],["playSE",18],["systemMessageBox","获得小飞羽，提升一级。"],["suicide"]]
+	}
+}
